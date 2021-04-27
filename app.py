@@ -15,8 +15,8 @@ def main():
     choice = st.sidebar.selectbox('Menu',menu)
 
     if choice == 'Home':
-        st.header('본 프로젝트에서는 SSD, YOLO, Semantic Segmentation을 활용하여 Object Detection을 실습하였습니다.')
-        
+        st.subheader('본 프로젝트에서는 SSD, YOLO, Semantic Segmentation을 활용하여 Object Detection을 실습하였습니다.')
+
         st.write('각 페이지를 통해 model을 선택하여 이미지파일을 input하면 결과를 보실 수 있습니다.')
         st.image('ssd.png')
 
