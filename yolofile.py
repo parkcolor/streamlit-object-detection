@@ -84,5 +84,5 @@ def yolo():
         file_byte = np.asarray(bytearray(upload_file.read()), dtype= np.uint8)
         image = cv2.imdecode(file_byte, 1)
         result_image = detect_image(image, yolo, all_classes)
+        st.image(result_image,channels="BGR")    
     
-    st.image(result_image,channels="BGR")
