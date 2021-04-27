@@ -23,7 +23,7 @@ import streamlit as st
 import pandas as pd
 
 def ssd():
-  PATH_TO_LABELS = 'C:\\Users\\5-15\\Documents\\GitHub\\streamlit-object-detection\\mscoco_label_map.pbtxt'
+  PATH_TO_LABELS = 'mscoco_label_map.pbtxt'
   category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS)
   
   def load_model(model_name):
